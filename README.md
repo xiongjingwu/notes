@@ -1,2 +1,2 @@
 # notes
-personal study notes
+personal notes
