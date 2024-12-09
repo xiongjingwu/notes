@@ -144,7 +144,9 @@ destFile.close();
 srcFile.close();
 ```
 
-```jsx
+调试日志
+
+```c
 #ifdef DEBUG_LOGGING
 #define RT_LOG(message, ...) \
   printf("[RT LOG] %s:%d - " message "\n", __FILE__, __LINE__, ##__VA_ARGS__)
@@ -152,7 +154,9 @@ srcFile.close();
 #define RT_LOG(message, ...)
 #define LOG(INFO)
 #endif
+```
 
+```cmake
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")
   target_compile_options(rt PRIVATE -DDEBUG_LOGGING)
 endif()

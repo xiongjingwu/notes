@@ -267,4 +267,4 @@ if __name__ == '__main__':
 
 ```
 
-![Untitled](./png/Untitled%202.png)
+![Untitled](./pic/Untitled%202.png)
